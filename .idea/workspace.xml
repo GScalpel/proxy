@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9b8915-cf44-4ce5-ae92-80d326676290" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/in_gs" beforeDir="false" afterPath="$PROJECT_DIR$/src/in_gs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/in_gs/in.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/in_gs/in.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,7 +107,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/in_gs" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="urls">
