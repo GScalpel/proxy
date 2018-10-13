@@ -1,4 +1,4 @@
-package CreateEncrypt
+package createEncrypt
 
 import (
 	"math/rand"
