@@ -127,7 +127,7 @@ func HandleSocks5(conn net.Conn) *Destination {
 		fmt.Println("Read error port")
 		return nil
 	}
-
+	conn.Write(repInfo)
 	port := strconv.Itoa(int(bufPort[0])*256 + int(bufPort[1]))
 	destination.Port = port
 

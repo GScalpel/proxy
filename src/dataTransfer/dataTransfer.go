@@ -14,7 +14,7 @@ func DataHandle(destination *socksFive.Destination, conn net.Conn)  {
 		return
 	}
 	go sendData(conn, remote)
-	//go sendData(remote, conn)
+	go sendData(remote, conn)
 }
 
 func sendData(conn net.Conn, remote net.Conn)  {
