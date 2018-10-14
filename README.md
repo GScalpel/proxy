@@ -10,19 +10,19 @@ go get github.com/GScalpel/proxy
 
 go run index.go -help
 
-  -host string
+*  -host string
     	need input Local host (default "127.0.0.1")
       
-  -port string
+*  -port string
     	need input Local port (default "1080")
       
-  -sHost string
+*  -sHost string
     	Remote server host (default "8.8.8.8")
       
-  -sPort string
+*  -sPort string
     	Remote server port (default "8888")
       
-  -select server or local
+*  -select server or local
     	select  to open server or local service(server or local) (default "local")
 
 # Example
