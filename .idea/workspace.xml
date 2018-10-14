@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9b8915-cf44-4ce5-ae92-80d326676290" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/index/index.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateEncrypt/CreateEncrypt.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/createEncrypt/CreateEncrypt.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dataTransfer/dataTransfer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataTransfer/dataTransfer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/local/local.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/startTask/startTask.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkHandle/linkHandle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkHandle/linkHandle.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkHandle/linkHandle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socksFive/socks5.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/socksFive/socks5.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tmp.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,34 +19,36 @@
     <session id="-1189446801">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="59" />
+          <entry key="go" value="66" />
+          <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="59" />
+          <entry key="Go" value="66" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="9659" />
+          <entry key="go" value="10038" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="9659" />
+          <entry key="Go" value="10038" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -61,23 +61,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index/index.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="182">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
-                <element signature="e#14#73#0" expanded="true" />
+                <element signature="e#14#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dataTransfer/dataTransfer.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="546">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tmp.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -94,17 +94,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/socksFive/socks5.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1128">
-              <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+            <state relative-caret-position="278">
+              <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/linkHandle/linkHandle.go">
+        <entry file="file://$PROJECT_DIR$/src/pwdBook/password.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="84" column="46" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="46" />
+            <state relative-caret-position="130">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -112,10 +112,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/createEncrypt/CreateEncrypt.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
+            <state relative-caret-position="406">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#23#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/linkHandle/linkHandle.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+              <folding>
+                <element signature="e#20#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,6 +148,10 @@
       <find>make</find>
       <find>prin</find>
       <find>connect destination error</find>
+      <find>defer</find>
+      <find>fmt</find>
+      <find>dial tcp</find>
+      <find>Print</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -162,16 +178,16 @@
         <option value="$PROJECT_DIR$/src/pwdBook/password.go" />
         <option value="$PROJECT_DIR$/src/socks5/socks5.go" />
         <option value="$PROJECT_DIR$/src/startTask/startTask.go" />
-        <option value="$PROJECT_DIR$/src/socksFive/socks5.go" />
         <option value="$PROJECT_DIR$/src/createEncrypt/CreateEncrypt.go" />
         <option value="$PROJECT_DIR$/src/local/local.go" />
         <option value="$PROJECT_DIR$/src/linkHandle/startTask.go" />
         <option value="$PROJECT_DIR$/src/server/server.go" />
-        <option value="$PROJECT_DIR$/src/tmp.go" />
         <option value="$PROJECT_DIR$/test.go" />
+        <option value="$PROJECT_DIR$/src/tmp.go" />
+        <option value="$PROJECT_DIR$/src/dataTransfer/dataTransfer.go" />
+        <option value="$PROJECT_DIR$/src/socksFive/socks5.go" />
         <option value="$PROJECT_DIR$/src/index/index.go" />
         <option value="$PROJECT_DIR$/src/linkHandle/linkHandle.go" />
-        <option value="$PROJECT_DIR$/src/dataTransfer/dataTransfer.go" />
       </list>
     </option>
   </component>
@@ -182,7 +198,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="63" />
+    <option name="x" value="10" />
+    <option name="y" value="30" />
     <option name="width" value="1910" />
     <option name="height" value="787" />
   </component>
@@ -199,11 +216,6 @@
             <path>
               <item name="proxyServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="proxyServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proxyServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proxyServer" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proxyServer" type="b2602c69:ProjectViewProjectNode" />
@@ -261,7 +273,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -280,15 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build index.go">
-    <configuration name="go build dataTransfer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="proxyServer" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/dataTransfer/dataTransfer.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build linkHandle.go">
     <configuration name="go build index.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="proxyServer" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -297,11 +301,11 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build local.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build linkHandle.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="proxyServer" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/local/local.go" />
+      <filePath value="$PROJECT_DIR$/src/linkHandle/linkHandle.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -310,6 +314,14 @@
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/src/server/server.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build socks5.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="proxyServer" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/socksFive/socks5.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -323,18 +335,18 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build tmp.go" />
-      <item itemvalue="Go Build.go build dataTransfer.go" />
-      <item itemvalue="Go Build.go build local.go" />
       <item itemvalue="Go Build.go build server.go" />
       <item itemvalue="Go Build.go build index.go" />
+      <item itemvalue="Go Build.go build socks5.go" />
+      <item itemvalue="Go Build.go build linkHandle.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build index.go" />
+        <item itemvalue="Go Build.go build linkHandle.go" />
+        <item itemvalue="Go Build.go build socks5.go" />
         <item itemvalue="Go Build.go build tmp.go" />
+        <item itemvalue="Go Build.go build index.go" />
         <item itemvalue="Go Build.go build server.go" />
-        <item itemvalue="Go Build.go build local.go" />
-        <item itemvalue="Go Build.go build dataTransfer.go" />
       </list>
     </recent_temporary>
   </component>
@@ -348,22 +360,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="3" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" weight="0.18783352" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" weight="0.18996799" />
       <window_info id="Structure" order="1" sideWeight="0.500813" side_tool="true" weight="0.1814301" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.32824427" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3284055" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.3380589" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994664" weight="0.3304253" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994664" weight="0.3293348" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.3304253" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -371,19 +383,19 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" visible="true" weight="0.18783352" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" visible="true" weight="0.18996799" />
       <window_info id="Structure" order="1" sideWeight="0.500813" side_tool="true" weight="0.1814301" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.32824427" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3284055" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.3380589" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994664" weight="0.3304253" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4994664" visible="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.3304253" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -402,9 +414,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/src/linkHandle/linkHandle.go</url>
-          <line>42</line>
-          <properties />
+          <line>41</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/socksFive/socks5.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -436,61 +452,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pwdBook/password.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/in_gs/in.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#21#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/local/local.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tmp.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataTransfer/dataTransfer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/linkHandle/linkHandle.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="84" column="46" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/in_gs/in.go" />
+    <entry file="file://$PROJECT_DIR$/test.go" />
+    <entry file="file://$PROJECT_DIR$/src/local/local.go" />
+    <entry file="file://$PROJECT_DIR$/src/github.com/sirupsen/logrus/README.md" />
     <entry file="file://$PROJECT_DIR$/src/createEncrypt/CreateEncrypt.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
+        <state relative-caret-position="406">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#23#54#0" expanded="true" />
@@ -498,20 +466,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/socksFive/socks5.go">
+    <entry file="file://$PROJECT_DIR$/src/tmp.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1128">
-          <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index/index.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="182">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
-            <element signature="e#14#73#0" expanded="true" />
+            <element signature="e#14#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/linkHandle/linkHandle.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+          <folding>
+            <element signature="e#20#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pwdBook/password.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socksFive/socks5.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataTransfer/dataTransfer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>

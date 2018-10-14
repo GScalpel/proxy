@@ -1,7 +1,6 @@
 package dataTransfer
 
 import (
-	"fmt"
 	"net"
 )
 
@@ -13,17 +12,12 @@ func SendData(conn net.Conn, remote net.Conn)  {
 
 	for {
 		num,err := conn.Read(buffer)
-		if err != nil {
-			fmt.Println(err,1)
+		if err != nil || num ==0 {
 			return
 		}
 
-		if num == 0 {
-			return
-		}
 		_, err =remote.Write(buffer[:num])
 		if err != nil {
-			fmt.Println(err)
 			return
 		}
 	}

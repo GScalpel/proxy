@@ -2,7 +2,6 @@ package linkHandle
 
 import (
 	"dataTransfer"
-	"fmt"
 	"log"
 	"net"
 	"socksFive"
@@ -25,15 +24,15 @@ func Local(sock net.Listener, serverMsg *ServerMessage) {
 	for {
 		conn, err := sock.Accept()
 		if err != nil {
-			fmt.Println("Connection Error")
+			log.Println("Accept error: ", err)
 			continue
 		}
 
 		go func() {
-			destination := socksFive.HandleSocks5(conn)
-			if destination == nil {
+			destination, err := socksFive.HandleSocks5(conn)
+			if destination == nil || err != nil {
 				conn.Close()
-				fmt.Println("HandleSocks5 happens error")
+				log.Println("HandleSocks5 happens error: ", err)
 				return
 			}
 
@@ -46,7 +45,7 @@ func Server(sock net.Listener) {
 	for {
 		conn, err := sock.Accept()
 		if err != nil {
-			fmt.Println("Connection Error")
+			log.Println("Accept Error: ",err)
 			continue
 		}
 
@@ -54,7 +53,7 @@ func Server(sock net.Listener) {
 			buf := make([]byte, 256)
 			num,err := conn.Read(buf)
 			if err != nil {
-				println("Read error")
+				log.Println("Destination Message Read error: ", err)
 				conn.Close()
 				return
 			}
@@ -66,10 +65,7 @@ func Server(sock net.Listener) {
 
 func ConnHandleL(destination *socksFive.Destination, serverMsg *ServerMessage, conn net.Conn)  {
 	remote,err := net.Dial("tcp", serverMsg.ServerHost+":"+serverMsg.ServerPort)
-	//fmt.Println(destination.Addr,destination.Port)
 	if err != nil {
-		fmt.Println(serverMsg.ServerHost+":"+serverMsg.ServerHost)
-		fmt.Println("connect destination error11")
 		return
 	}
 	buf := []byte(destination.Addr + ":" + destination.Port)
@@ -80,9 +76,7 @@ func ConnHandleL(destination *socksFive.Destination, serverMsg *ServerMessage, c
 
 func ConnHandleS(dst string,  conn net.Conn)  {
 	remote,err := net.Dial("tcp", dst)
-	//fmt.Println(destination.Addr,destination.Port)
 	if err != nil {
-		fmt.Println("connect destination error")
 		return
 	}
 	go dataTransfer.SendData(conn, remote)

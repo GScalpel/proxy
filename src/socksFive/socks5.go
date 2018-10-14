@@ -1,7 +1,7 @@
 package socksFive
 
 import (
-	"fmt"
+	"errors"
 	"net"
 	"regexp"
 	"strconv"
@@ -32,21 +32,19 @@ var	(
 )
 
 // handle socks5 and analyze Destination message
-func HandleSocks5(conn net.Conn) *Destination {
+func HandleSocks5(conn net.Conn) (*Destination, error) {
 	buffer := make([]byte, 257)
 
 	// Accept request for certification
 	_, err := conn.Read(buffer)
 	if err != nil {
-		fmt.Println("Read error")
-		return nil
+		return nil, err
 	}
 
 	// Respond for certification
 	_, err = conn.Write(repAuth)
 	if err != nil {
-		fmt.Println("Write error")
-		return nil
+		return nil, err
 	}
 
 	// request message
@@ -54,13 +52,12 @@ func HandleSocks5(conn net.Conn) *Destination {
 	bufType := buffer[:4]
 	_, err = conn.Read(bufType)
 	if err != nil {
-		fmt.Println("Read error")
-		return nil
+		return nil, err
 	}
 
 	if bufType[1] != 1 {
-		fmt.Println("commend error : need connect commend")
-		return nil
+		err = errors.New("NOT CONNECT REQUEST")
+		return nil, err
 	}
 
 	destination := new(Destination)
@@ -71,8 +68,7 @@ func HandleSocks5(conn net.Conn) *Destination {
 			bufHost := buffer[:ipv4Len]
 			_, err = conn.Read(bufHost)
 			if err != nil {
-				fmt.Println("Read error")
-				return nil
+				return nil, err
 			}
 			host := net.IP(bufHost).String()
 			destination.Addr = host
@@ -84,8 +80,7 @@ func HandleSocks5(conn net.Conn) *Destination {
 			bufHost := buffer[:ipv6Len]
 			_, err = conn.Read(bufHost)
 			if err != nil {
-				fmt.Println("Read error")
-				return nil
+				return nil, err
 			}
 			host := net.IP(bufHost).String()
 			destination.Addr = host
@@ -97,23 +92,20 @@ func HandleSocks5(conn net.Conn) *Destination {
 			hostLen := buffer[:1]
 			_, err := conn.Read(hostLen)
 			if err != nil {
-				fmt.Println("Read error")
-				return nil
+				return nil, err
 			}
 
 			//bufHost := make([]byte, num)
 			bufHost := buffer[:hostLen[0]]
 			_, err = conn.Read(bufHost)
 			if err != nil {
-				fmt.Println("Read error")
-				return nil
+				return nil,err
 			}
 
 			host := string(bufHost)
 			check := domainCheck(host)
 			if check != true {
-				fmt.Println("Not a domain")
-				return nil
+				return nil,err
 			}
 
 			destination.Addr = host
@@ -124,22 +116,19 @@ func HandleSocks5(conn net.Conn) *Destination {
 	bufPort := buffer[:portLen]
 	_, err = conn.Read(bufPort)
 	if err != nil {
-		fmt.Println("Read error port")
-		return nil
+		return nil,err
 	}
 	conn.Write(repInfo)
 	port := strconv.Itoa(int(bufPort[0])*256 + int(bufPort[1]))
 	destination.Port = port
 
-	return destination
+	return destination, nil
 }
 
 // check domain is legal
 func domainCheck(host string) bool {
 	check, err := regexp.MatchString(".[a-z]+$", host)
-	fmt.Println(check, host)
 	if err != nil {
-		fmt.Println("regexp error")
 		return false
 	}
 
