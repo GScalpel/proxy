@@ -12,12 +12,16 @@ go run index.go -help
 
   -host string
     	need input host (default "127.0.0.1")
+      
   -port string
     	need input port (default "1080")
+      
   -sHost string
     	index host (default "8.8.8.8")
+      
   -sPort string
     	index port (default "8888")
+      
   -select server or local
     	select  to open server or local service(server or local) (default "local")
 
