@@ -2,26 +2,29 @@ package createEncrypt
 
 import (
 	"math/rand"
-	"time"
 )
 
 const PasswordLength = 256
 
 type Password [PasswordLength]byte
 
-func init()  {
-	rand.Seed(time.Now().Unix())
-}
 // password可以取地址创建：Password为一个array而不是slice
-func CreateEncrypt() *Password {
-	intArr := rand.Perm(256)
-	rand.Seed(6)
-	password := &Password{}
-	for i, v := range intArr {
-		password[i] = byte(v)
-		if i == v {
-			return CreateEncrypt()
+func CreateEncrypt(seed int64) (*Password, *Password) {
+	rand.Seed(seed)
+	pwd, upwd := generate()
+	return pwd, upwd
+}
+
+func generate() (*Password, *Password) {
+	password := new(Password)
+	unPassword := new(Password)
+	intArr := rand.Perm(PasswordLength)
+	for k, v := range intArr {
+		password[k] = byte(v)
+		unPassword[v] = byte(k)
+		if k == v {
+			return generate()
 		}
 	}
-	return password
+	return password, unPassword
 }

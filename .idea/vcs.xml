@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/github.com/sirupsen/logrus" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/golang.org/x/crypto" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/golang.org/x/sys" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/in_gs" vcs="Git" />
   </component>
 </project>

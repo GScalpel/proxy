@@ -70,8 +70,8 @@ func ConnHandleL(destination *socksFive.Destination, serverMsg *ServerMessage, c
 	}
 	buf := []byte(destination.Addr + ":" + destination.Port)
 	remote.Write(buf)
-	go dataTransfer.SendData(conn, remote)
-	go dataTransfer.SendData(remote, conn)
+	go dataTransfer.SendDataEncrypt(conn, remote,"local1")
+	go dataTransfer.SendDataDecrypt(remote, conn, "local1")
 }
 
 func ConnHandleS(dst string,  conn net.Conn)  {
@@ -79,6 +79,6 @@ func ConnHandleS(dst string,  conn net.Conn)  {
 	if err != nil {
 		return
 	}
-	go dataTransfer.SendData(conn, remote)
-	go dataTransfer.SendData(remote, conn)
+	go dataTransfer.SendDataEncrypt(remote, conn, "server1")
+	go dataTransfer.SendDataDecrypt(conn, remote, "server1")
 }
